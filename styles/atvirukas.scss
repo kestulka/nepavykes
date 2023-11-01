@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.stem {
+  width: 10px;
+  height: 30vh;
+  background: linear-gradient(
+    to right,
+    #228b22,
+    #90ee90
+  ); /* This is the color for the green stem (forest green) */
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.leaf {
+  width: 50px;
+  height: 40px;
+  background-color: #228b22; /* Leaf color */
+  position: absolute;
+  border-radius: 0 100% 100% 100%;
+}
+
+.left-leaf {
+  transform: rotate(150deg);
+}
+
+.right-leaf {
+  transform: rotate(-40deg);
+}
+
+/* Adjust the positioning for each leaf */
+.left-leaf:nth-child(1) {
+  top: 5vh;
+  left: -25px;
+}
+
+.left-leaf:nth-child(2) {
+  top: 10vh;
+  left: -55px;
+}
+
+.right-leaf:nth-child(1) {
+  top: 10vh;
+  right: -45px;
+}
+
+.right-leaf:nth-child(2) {
+  top: 5vh;
+  right: 5px;
+}
+.flower-middle {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #ffa500, yellow);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.petal {
+  width: 80px;
+  height: 35px;
+  background-color: #ffa500; /* Orange petal color */
+  position: absolute;
+  border-radius: 1em;
+  transform: rotate(60deg);
+  z-index: 1;
+}
+
+.petal:nth-child(1) {
+  transform: rotate(60deg);
+}
+
+.petal:nth-child(2) {
+  transform: rotate(120deg);
+}
+
+.petal:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.petal:nth-child(4) {
+  transform: rotate(240deg);
+}
+
+.petal:nth-child(5) {
+  transform: rotate(300deg);
+}
+
+.petal:nth-child(6) {
+  transform: rotate(360deg);
+}
